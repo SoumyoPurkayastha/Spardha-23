@@ -25,6 +25,9 @@ const HomeSlider2 = () => {
             </section>
             <section className={isVisible ? 'about_show' : 'about_hidden'}>
               <p>ABOUT US</p>
+              <div className="about_box">
+                <p>absddbfs</p>
+              </div>
             </section>
           </>
         )}
