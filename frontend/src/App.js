@@ -92,11 +92,7 @@ function App() {
         >
           <Route
             path=""
-            element={
-              <Suspense fallback={<Preloader />}>
-                <About />
-              </Suspense>
-            }
+            element={<Suspense fallback={<Preloader />}></Suspense>}
           />
           <Route
             path="register"

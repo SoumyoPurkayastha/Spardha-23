@@ -48,6 +48,12 @@
   opacity: 0;
   transition: 1s;
 }
+.about_card {
+  font-size: 20px;
+  width: 120vh;
+  background-color: darkolivegreen;
+  padding: 3%;
+}
 
 .hidden {
   opacity: 0;
