@@ -15,6 +15,9 @@ const DashBoard = React.lazy(() =>
   import('./components/DashBoard/MainMenu/DashBoard')
 );
 const About = React.lazy(() => import('./components/LandingPages/About/About'));
+const Homepage = React.lazy(() =>
+  import('./components/LandingPages/HomeSlider/HomeSlider2')
+);
 const CamAmb = React.lazy(() =>
   import('./components/LandingPages/Camp_Amb/CamAmb')
 );
@@ -92,7 +95,11 @@ function App() {
         >
           <Route
             path=""
-            element={<Suspense fallback={<Preloader />}></Suspense>}
+            element={
+              <Suspense fallback={<Preloader />}>
+                <Homepage />
+              </Suspense>
+            }
           />
           <Route
             path="register"
